@@ -4,10 +4,10 @@
 	"name": "Clear Watch Later Videos",
 	"version": "1.0",
 
-	"description": "Adds a red border to all webpages matching mozilla.org.",
+	"description": "Delete videos from youtube watch later. Works only on https://www.youtube.com/playlist?list=WL&disable_polymer=true",
 
 	"icons": {
-		"48": "icons/border-48.png"
+		"48": "icons/icon32.png"
 	},
 
 	"content_scripts": [{
