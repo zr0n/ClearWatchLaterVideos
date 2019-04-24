@@ -1,0 +1,32 @@
+{
+
+	"manifest_version": 2,
+	"name": "Clean Watched Videos",
+	"version": "1.0",
+
+	"description": "Adds a red border to all webpages matching mozilla.org.",
+
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"content_scripts": [{
+			"matches": ["*://*.youtube.com/playlist?list=WL*"],
+			"js": ["remove-from-watch.js"]
+		}
+	],
+	"browser_action": {
+		"default_icon": {
+			"16": "icons/icon16.png",
+			"32": "icons/icon32.png"
+		}
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": [
+		"<all_urls>",
+		"tabs"
+	]
+
+}
